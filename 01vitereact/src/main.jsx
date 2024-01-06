@@ -1,5 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import {jsx as _jsx} from "react/jsx-runtime"
+// from here we can write our React.CreateElement directly using the jsx 
+// but that is also not as easy as react.createElement 
+// ye kiya ja sakta h 
+// 
 import App from './App.jsx'
 
 function MyApp() {
@@ -29,6 +34,7 @@ const anotherElement = (
 const anotherUser= "Narender Modi"
 
 // the real react object or we can say the parameters that react expects before we can pass the object into the render
+// this is converted by bable 
 const ReactElement = React.createElement(
   /// parameter 1 tag
   'a',
@@ -38,7 +44,7 @@ const ReactElement = React.createElement(
   },
   'Click me to visit google',
   // added after 
-  // cna be used like this 
+  // can be used like this 
   // basically we can pass a variable in simple html also and it will be rendered
   //! But We can't do js things inside here also because it's an object and also because React Does no Allow it 
   anotherUser

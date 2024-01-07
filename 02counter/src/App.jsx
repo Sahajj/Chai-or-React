@@ -32,6 +32,19 @@ function App() {
     // challenge
     if(counter < 20 ){
       setCounter(counter+1);
+      // setCounter(counter+1);
+      // setCounter(counter+1);     
+      // setCounter(counter+1);
+      //? Using to Callback to update the value of the counter
+      //? that fetches the last counter values state and then updates that not the 
+      //? counter value passed in the main function
+      //! the value of the call back can be anything
+      //! any variable and then we call it an update it
+      //* This also tells that the setCounter function accepts a callback that can be used
+      // setCounter(prevCounter => prevCounter + 1);
+      // setCounter(prevCounter => prevCounter + 1);
+      // setCounter(prevCounter => prevCounter + 1);
+      // setCounter(prevCounter => prevCounter + 1);
     }
   }
 
